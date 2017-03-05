@@ -5,13 +5,18 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'paperclip', '~> 5.1'
+gem 'simple_form', '~> 3.4'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'devise', '~> 4.2'
+gem 'acts_as_votable', '~> 0.10.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.0'  
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
